@@ -1,0 +1,245 @@
+*{ box-sizing: border-box;}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'inherit','FuturaStd','Helvetica','arial','sans-serif' ;
+    background-color: #FFFFF8;
+    color: black;
+}
+img{
+    width: 100%;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+a :hover{
+    color: rgb(69, 46, 16);
+}
+h1{
+    margin: 20px;
+}
+.header-top{
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 4;
+    margin-top: 15px;
+}
+
+.search{
+    display: flex;
+    align-items: baseline;
+}
+
+#menu{
+    min-width: 960px;
+    max-width: 1200px;
+    line-height: 50px;
+    font-size: 18px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-item{
+    padding: 0 20px;
+}
+.menu-reserv{
+    background-color: #EEE0CC;
+    text-shadow: 1px 2px 1px #EEE0CC;
+    border-radius: 2px;
+}
+
+/* ----------------------------- MENU BURGER -------------------------------*/
+/* Sidenav menu */
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -250px;
+    background-color: #f4eadc;
+    padding-top: 60px;
+    transition: left 0.5s ease;
+  }
+  
+  /* Sidenav menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #B18B46;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #111;
+  }
+  
+  .sidenav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Active class */
+  .sidenav.active {
+    left: 0;
+  }
+  
+  /* Close btn */
+  .sidenav .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }
+  
+  /* Icône burger */
+  .burger-icon span {
+    display: block;
+    width: 35px;
+    height: 4px;
+    background-color: #B18B46;
+    margin: 6px 10px;
+    border-radius: 10px;
+  }
+
+  /* ----------------------------- BANDEAU DE RESERVATION -------------------------------*/
+  #bandeau-index{
+    width: 100%;
+    background-color: #EEE0CC;
+    opacity: 70%;
+    min-height: 60px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+
+  .bandeau-reserv{
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      
+  }
+  .bandeau-reserv-item{
+      padding: 20px;
+      text-transform: uppercase; 
+  }
+
+  .button{
+    background-color: #AC8866;
+    color: white;
+    border-radius: 2px;
+    border: none;
+    transition: 0.5s;
+    padding: 10px;
+  }
+/* ----------------------------- SECTION INTRO -------------------------------*/
+  .accueil{
+      text-align: center;
+      padding: 50px;
+  }
+/* ------------------------ SECTION PRESENTATION HOTEL ------------------------*/
+.pres-hotel{
+    display: flex;
+    padding: 30px;
+    align-items: center;
+}
+.text-hotel{
+    padding: 20px 20px 20px 40px;
+}
+/* ------------------ SECTION CHAMBRES ET SUITES ------------------*/
+.pres-room{
+    display: flex;
+    padding: 30px;
+    align-items: center;
+}
+.text-room{
+    padding: 20px 20px 20px 40px;
+}
+/* ------------------ SECTION RESTAURANT ------------------*/
+.pres-restau{
+    display: flex;
+    padding: 30px;
+    align-items: center;
+}
+.text-restau{
+    padding: 20px 20px 20px 40px;
+}
+/* ------------------ SECTION SPA ------------------*/
+.pres-spa{
+    display: flex;
+    padding: 30px;
+    align-items: center;
+}
+.text-spa{
+    padding: 20px 20px 20px 40px;
+}
+/* ------------------ SECTION OFFRES ------------------*/
+.title-offer{
+    text-align: center;
+    padding: 50px;
+}
+.pres-offer{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.img-offer{
+    padding: 20px;
+}
+/* ------------------ SECTION ACTUALITES ------------------*/
+.title-actu{
+    text-align: center;
+    padding: 50px 40px 20px 40px;
+}
+.pres-actu{
+    display: flex;
+    padding: 30px;
+    align-items: center;
+}
+.text-actu{
+    padding: 20px 20px 20px 40px;
+}
+
+/* ------------------ SECTION GALERIE PHOTOS ------------------*/
+.title-galery{
+    text-align: center;
+    padding: 40px;
+}
+.bloc-img{
+    display: flex;
+    padding: 10px;
+}
+.img{
+    padding: 10px;
+}
+#footer{
+width: 100%;
+background-color: #EDEDED;
+margin-left: auto;
+margin-right: auto;
+padding-top: 12px;
+text-align: center;
+}
+
+.logo{
+    width: 20%;
+}
+.footer-top{
+    line-height: 25px;
+    font-size: 14px;
+}
+
+.footer-r{
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+}
