@@ -1,26 +1,104 @@
-* {
-    font-family: 'inherit','FuturaStd','Helvetica','arial','sans-serif';
-    box-sizing: border-box;
-}
-img { max-width: 100%; }
+*{ box-sizing: border-box;}
 
-body{  
+body{
     margin: 0;
     padding: 0;
-    background-color: #FFFFF8;
+    font-family: 'lato', 'inherit','FuturaStd','Helvetica','arial','sans-serif' ;
+    font-size: 20px;
+    background-color: white;
+    color: black;
 }
 
 .container{
+    background-color: white;
+}
+
+img{
+    width: 100%;
+}
+.btn-search{
+    background-color: #EEE0CC;
+    color:#B7906C;
+    border-radius: 2px;
+    border: white;
+    margin: 8px;
+}
+
+.search1{
+    border: solid 2px #B7906C;
+    border-radius: 3px;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+a:hover{
+    color: #B7906C;
+}
+
+hr{
+    margin: 0;
+}
+h1{
+    margin: 20px;
+}
+h2{
+    color: #AC8866;
+}
+h3{
+    color: #d8c4a6
+}
+.logo1{
+    width: 20%;
+    margin-right: 500px;
+   
+}
+.header-top{
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 4;
+    margin: 20px;
+}
+#menu{
+    min-width: 960px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
-}
-
-.logo{
+    line-height: 50px;
+    font-size: 18px;
     text-align: center;
+    display: flex;
+}
+.search{
+    display: flex;
+    align-items: baseline;
+}
+.langues{
+    display: flex;
 }
 
+.fr, .en{
+    padding: 5px;
+}
+#menu{
+    min-width: 960px;
+    max-width: 1200px;
+    line-height: 50px;
+    font-size: 18px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
 
-
+.menu-item{
+    padding: 0 20px;
+}
+.menu-reserv{
+    background-color: #EEE0CC;
+    text-shadow: 1px 2px 1px #EEE0CC;
+    border-radius: 2px;
+}
 
 /* ----------------------------- MENU BURGER -------------------------------*/
 /* Sidenav menu */
@@ -75,70 +153,237 @@ body{
     width: 35px;
     height: 4px;
     background-color: #B18B46;
-    margin: 6px 0;
+    margin: 6px 10px;
     border-radius: 10px;
   }
 
+  /* ----------------------------- BANDEAU DE RESERVATION -------------------------------*/
+  #bandeau-index{
+    width: 100%;
+    background-color: #EEE0CC;
+    opacity: 70%;
+    min-height: 60px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
 
+  .bandeau-reserv{
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      
+  }
+  .bandeau-reserv-item{
+      padding: 20px;
+      text-transform: uppercase; 
+  }
 
-
-  /* ----------------------------- CAROUSEL -------------------------------*/
-  
- 
-
-  /* ----------------------------- RESPONSIVE -------------------------------*/
-  
-/* Media query afin de passer les div dans la section en 100% largeur max : 768px */
-/* Pour les tailles d'écran inférieures à 768px on réarrange les éléments */
-@media screen and (max-width: 768px) {
-    section > div {
-        width: 100%;
-    }
-    section {
-        padding: 20px;
-    }
-    .contenu > div {
-        width: 50%;
-    }
+  .button{
+    background-color: #AC8866;
+    color: white;
+    border-radius: 2px;
+    border: none;
+    transition: 0.5s;
+    padding: 10px;
+  }
+/* ----------------------------- SECTION INTRO -------------------------------*/
+  .accueil{
+      text-align: center;
+      padding: 50px;
+  }
+/* ------------------------ SECTION PRESENTATION HOTEL ------------------------*/
+.pres-hotel{
+    display: flex;
+    padding: 30px;
+    align-items: center;
 }
-/* Pour les tailles d'écran inférieures à 576px on réarrange les éléments */
-@media (max-width: 576px) {
-    section {
-        padding: 0;
-    }    
-    .contenu > div {
-        width: 100%;
-    }
-    .contenu {
-        padding: 0;
-    }
-    p {
-        font-size: 1.3em;
-    }
-    h1 {
-        font-size: 1.6em;
-    }
-    section > div {
-        padding: .8em;    
-    }
+.text-hotel{
+    padding: 20px 20px 20px 40px;
+}
+/* ------------------ SECTION CHAMBRES ET SUITES ------------------*/
+.pres-room{
+    display: flex;
+    padding: 30px;
+    align-items: center;
+}
+.text-room{
+    padding: 20px 20px 20px 40px;
+}
+/* ------------------ SECTION RESTAURANT ------------------*/
+.pres-restau{
+    display: flex;
+    padding: 30px;
+    align-items: center;
+}
+.text-restau{
+    padding: 20px 20px 20px 40px;
+}
+/* ------------------ SECTION SPA ------------------*/
+.pres-spa{
+    display: flex;
+    padding: 30px;
+    align-items: center;
+}
+.text-spa{
+    padding: 20px 20px 20px 40px;
+}
+/* ------------------ SECTION OFFRES ------------------*/
+.title-offer{
+    text-align: center;
+    padding: 50px;
+}
+.pres-offer{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.img-offer{
+    padding: 20px;
+}
+/* ------------------ SECTION ACTUALITES ------------------*/
+.title-actu{
+    text-align: center;
+    padding: 50px 40px 20px 40px;
+}
+.pres-actu{
+    display: flex;
+    padding: 30px;
+    align-items: center;
+}
+.text-actu{
+    padding: 20px 20px 20px 40px;
+}
+
+/* ------------------ SECTION GALERIE PHOTOS ------------------*/
+.title-galery{
+    text-align: center;
+    padding: 40px;
+}
+.bloc-img{
+    display: flex;
+    padding: 10px;
+}
+.img{
+    padding: 10px;
+}
+
+/* ------------------ SECTION PAGE HOTEL ---------------------------*/
+.intro{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.pres-who, .pres-pers{
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    flex-direction: row;
+}
+.text-actu{
+    padding: 20px 20px 20px 40px;
+}
+
+/* ------------------ SECTION PAGE CHAMBRES & SUITES ---------------------------*/
+
+.pres-widget{
+   
+}
+.icon{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    margin-bottom: 40px;
 }
 
 
-/* Pour les tailles d'écran supérieures à 1200px on grossit le conteneur et la taille de police générale */
-@media (min-width: 1200px) {
-    .conteneur {
-        max-width: 1140px;
-    }
-    body {
-        font-size: 18px;
-    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------ SECTION FOOTER ---------------------------*/
+#footer{
+width: 100%;
+background-color: #f7efe3;
+margin-left: auto;
+margin-right: auto;
+padding-top: 12px;
+text-align: center;
 }
-/* Pour les tailles d'écran supérieures à 1400px on grossit le conteneur et la taille de police générale */
-@media (min-width: 1400px) {
-    .conteneur {
-        max-width: 1320px;
-    }
-    body {
-        font-size: 20px;
-    }
+
+.logo{
+    width: 20%;
+    margin: 0 auto;
+}
+.footer-top{
+    line-height: 25px;
+    font-size: 14px;
+}
+
+.footer-r{
+    display: flex;
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.footer-r > a{
+    padding: 10px;
+    font-size: 40px;
+}
+
+.footer-bottom{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px 0;
+}
+
+.email{
+    margin-top: 10px;
+    margin-right: 0px;
+    margin-left: 20px;
+    background-color: #FFF;
+    height: 45px;
+    padding: 0 0 0 20px;
+    width: 60%;
+    border: 2px solid #C8B79D;
+    border-radius: 5px;
+    
+}
+
+.btn{
+    width: 25%;
+    height: 45px;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+    background-color: #C8B79D;
+    border: none;
+    text-shadow: 1px 2px 1px #C8B79D;
+   
+}
+
+.copyright{
+    font-size: 15px;
+    
 }
