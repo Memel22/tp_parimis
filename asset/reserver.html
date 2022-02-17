@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Raleway:wght@300&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+
+    <!--Favicon-->
+    <link rel="icon" href="./img/favicon_io/apple-touch-icon.png">
+
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+
+    <!--Mon CSS-->
+    <link rel="stylesheet" href="../style.css">
+
+    <title>Chambres & Suites Parimis Paris</title>
+
+</head>
+
+<body>
+    <!-- -------------------- HEADER -------------------- -->
+    <header>
+        <div class="header-top">
+            <!--logo-->
+            <div class="logo1">
+                <a href="../index.html"><img src="../img/parimis_logo.png" alt="logo parimis"></a>
+            </div>
+            <!-- Barre de recherche -->
+            <form class="search">
+                <input class="search1" type="search" placeholder="Rechercher..." name="search">
+                <div class="search2">
+                    <button class="btn-search" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </form>
+            <!-- Langues -->
+            <div class="langues">
+                <a href="./index.html" class="fr" title="Français"><img src="../img/francais.png" alt="site en FR">
+                </a>
+                <a href="./index.html" class="en" title="Anglais"><img src="../img/anglais.png" alt="site en EN"></a>
+            </div>
+        </div>
+
+        <!-- Menu Burger -->
+        <div id="mySidenav" class="sidenav">
+            <a id="closeBtn" href="#" class="close">x</a>
+            <ul>
+                <li><a href="./hotel.html">L'hôtel</a></li>
+                <li><a href="./chambre.html">Chambres & Suites</a></li>
+                <li><a href="./restaurant.html">Restaurant</a></li>
+                <li><a href="./spa.html">Spa & Bien-être</a></li>
+                <li><a href="./actu.html">Actualités</a></li>
+                <li><a href="./galerie.html">Galerie</a></li>
+                <li><a href="./plan.html">Plan & Accès</a></li>
+                <li><a href="./reserver.html">Réservation</a></li>
+            </ul>
+        </div>
+        <!-- burger -->
+        <a href="#" id="openBtn">
+            <span class="burger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+        </a>
+        <hr>
+
+        <!-- NavBar -->
+        <div class="header-bottom">
+            <nav id="menu">
+                <a href="./hotel.html" class="menu-item">L'hôtel</a>
+                <a href="./chambre.html" class="menu-item">Chambres & Suites</a>
+                <a href="./restaurant.html" class="menu-item">Restaurant</a>
+                <a href="./spa.html" class="menu-item">Spa & Bien-être</a>
+                <a href="./actu.html" class="menu-item">Actualités</a>
+                <a href="./galerie.html" class="menu-item">Galerie</a>
+                <a href="./reserver.html" class="menu-item menu-reserv">Réservation</a>
+            </nav>
+        </div>
+        <hr>
+    </header>
+
+    <!-- ------------------ FICHE RESERVATION -------------------- -->
+    <div class="container">
+        <section>
+            <div class="intro">
+                <h1>Réservation</h1>
+                <h3>Profitez pleinement de tous nos services en formule ou à la carte</h3>
+            </div>
+            <!-- ----------- Formulaire ------------- -->
+            <!-- Réservation DATES -->
+            <form class="form-dispo" method="post">
+                <h4>Vos disponibilités</h4>
+                <div class="bandeau-resa">
+                    <div class="bandeau-resa-item">
+                        <label for="to">Arrivée</label>
+                        <input type="date" name="to" class="date-sejour">
+                    </div>
+                    <div class="bandeau-resa-item">
+                        <label for="from">Départ</label>
+                        <input type="date" name="from" class="date-sejour">
+                    </div>
+                    <div class="bandeau-resa-item">
+                        <label for="case">Dates flexibles</label>
+                        <input type="checkbox" name="case" class="date-sejour">
+                    </div>
+                </div>
+                <!-- fenêtre form -->
+                <!-- Réservation HOTEL -->
+                <div class="window">
+                    <fieldset>
+                        <h3>Réservation Hôtel</h3>
+                        <div>
+                            <label>Choisissez le type de chambre :</label>
+                            <br>
+                            <div>
+                                <input type="radio" name="room" value="item_1" checked="checked">
+                                <label>Classique</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="room" value="item_2" checked="checked">
+                                <label>Confort</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="room" value="item_3" checked="checked">
+                                <label>Deluxe</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="room" value="item_4" checked="checked">
+                                <label>Suite</label>
+                            </div>
+                        </div>
+                        <br>
+                        <div>
+                            <label>Nombre de personne :</label>
+                            <br>
+                            <select>
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                            <label>Adulte(s) et</label>
+                            <select>
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                            <label>Enfant(s)</label>
+                        </div>
+                        <div>
+                            <br>
+                            <label for="">Animal de compagnie :</label>
+                            <input type="radio" name="pet" value="oui">
+                            <label for="oui">Oui</label>
+                            <input type="radio" name="pet" value="non" checked="checked">
+                            <label for="non">Non</label>
+                        </div>
+                    </fieldset>
+                    <!-- Réservation RESTAURANT -->
+                    <fieldset>
+                        <h3>Réservation Restaurant</h3>
+                        <div>
+                            <label>Nombre de menu :</label>
+                            <select>
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                            <label>menu(s)</label>
+                        </div>
+                        <div>
+                            <br>
+                            <label>Type de menu : </label>
+                            <select name="menu-restau">
+                                <option value="menu-restau">Brasserie (midi)</option>
+                                <option value="menu-restau">Dégustation</option>
+                                <option value="menu-restau">Restaurant (soir)</option>
+                            </select>
+                        </div>
+                    </fieldset>
+                    <!-- Réservation SPA -->
+                    <fieldset>
+                        <h3>Réservation Spa</h3>
+                        <div>
+                            <label>Nombre de soins :</label>
+                            <select>
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                            <label for="">soin(s)</label>
+                        </div>
+                        <div>
+                            <br>
+                            <label>Type de soin : </label>
+                            <select name="menu-restau">
+                                <option value="type-soin">Découverte</option>
+                                <option value="type-soin">Détente</option>
+                                <option value="type-soin">Relaxant</option>
+                                <option value="type-soin">Plaisir</option>
+                                <option value="type-soin">Evasion</option>
+                            </select>
+                        </div>
+                    </fieldset>
+                </div>
+                <!-- FIN Réservation SPA -->
+                <!-- BOUTON de réservation -->
+                <div id="btn-dispo">
+                    <button type="button"><a href="reserver.html">Voir les disponibilités</a></button>
+                </div>
+            </form>
+            <!-- FIN formulaire -->
+            <br>
+            <div class="intro">
+                <h5>Avertissement</h5>
+                <p>
+                    Ce site ne récolte aucune des données personnelles que vous pouvez saisir dans les formulaires
+                    d'inscriptions présents sur le site www.parimis.amelie.fr (pages "Réservation", "Contact",
+                    "Newsletter",etc.). Ce site, sans but commercial ni lucratif, a été créé dans le cadre d'un examen
+                    donné par le centre IFOCOP.
+                </p>
+                <br>
+            </div>
+        </section>
+    </div>
+    <!-- ----------- FOOTER ------------- -->
+    <footer>
+
+        <div id="footer">
+            <!--bloc footer logo & coordonnées-->
+            <div class="logo">
+                <a href="./index.html"><img src="../img/parimis_logo.png" alt="logo hotel"></a>
+            </div>
+            <div class="footer-top">
+                <address>1, avenue Montaigne 75008 Paris FRANCE</address>
+                <p>
+                    <a href="tel:0149553000"> +33 (1) 49 55 30 00</a>
+                    -
+                    Fax +33 (1) 49 55 30 10 <br>
+                </p>
+                <p><a href="mailto:contact@hotel-parimis.com">contact@hotel-parimis.com</a>
+                </p>
+            </div>
+
+            <!--bloc footer newsletter-->
+            <div id="newsletter">
+                <p>Pour recevoir nos offres spéciales inscrivez-vous à la newsletter</p>
+                <form>
+                    <input type="text" class="email" value="" placeholder="Votre adresse mail">
+                    <button type="submit" class="btn"
+                        onclick="alert('Vous êtes désormais inscrit à la newsletter Parimis')">S'inscrire</button>
+                </form>
+            </div>
+            <!--Bloc Footer réseaux-->
+            <div class="footer-r">
+                <p>SUIVEZ-NOUS</p>
+
+                <a target="_blank" href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                <a target="_blank" href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                <a target="_blank" href="https://pinterest.com"><i class="fa-brands fa-pinterest"></i></a>
+                <a target="_blank" href="https://google.com"><i class="fa-brands fa-google-plus-g"></i></a>
+                <a target="_blank" href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                <a target="_blank" href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+
+            </div>
+
+            <!--Bloc Footer liens-->
+            <div class="footer-bottom">
+
+                <a href="mention.html">Mentions Légales</a> -
+                <a href="cgv.html">Conditions Générales de Vente</a> -
+                <a href="plan.html">Plan du site </a> -
+                <a href="contact.html">Contact </a> -
+                <a href="avis.html">Avis </a> -
+                <a href="presse.html">Presse</a>
+
+            </div>
+
+            <!--Bloc Footer copyright-->
+            <div class="copyright">
+                <p>Officiel - Tous droits réservés - Hôtel Parimis Paris - © 2022 Conception & Réalisation : Amélie &
+                    cie</p>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="../app.js"></script>
+</body>
+
+</html>
