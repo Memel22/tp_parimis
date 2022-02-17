@@ -3,7 +3,7 @@
 body{
     margin: 0;
     padding: 0;
-    font-family: 'lato', 'inherit','FuturaStd','Helvetica','arial','sans-serif' ;
+    font-family: 'Roboto', sans-serif;;
     font-size: 20px;
     background-color: white;
     color: black;
@@ -43,12 +43,31 @@ hr{
 }
 h1{
     margin: 20px;
+    font-family: 'Raleway', sans-serif;
+    color:#B18B46; 
+    padding-bottom: 30px;
+    border-bottom: 1px solid #B18B46;;
 }
 h2{
     color: #AC8866;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 15px;
 }
 h3{
-    color: #d8c4a6
+    color: #d8c4a6;
+    font-family: 'Raleway', sans-serif;
+}
+h4{
+    padding-top: 35px;
+}
+h5{
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+h6{
+    margin-bottom: 15px;
+    font-style: italic;
+    color:rgba(123, 120, 120, 0.817) ;
 }
 .logo1{
     width: 20%;
@@ -95,6 +114,7 @@ h3{
     padding: 0 20px;
 }
 .menu-reserv{
+    
     background-color: #EEE0CC;
     text-shadow: 1px 2px 1px #EEE0CC;
     border-radius: 2px;
@@ -203,6 +223,11 @@ h3{
 .text-hotel{
     padding: 20px 20px 20px 40px;
 }
+.see-more{
+    font-size: 15px;
+    font-style: italic;
+    color:  #B18B46;
+}
 /* ------------------ SECTION CHAMBRES ET SUITES ------------------*/
 .pres-room{
     display: flex;
@@ -289,25 +314,72 @@ h3{
 
 /* ------------------ SECTION PAGE CHAMBRES & SUITES ---------------------------*/
 
-.pres-widget{
-   
+.title-widget{
+   margin-top: 40px;
+   text-align: center;
 }
 .icon{
-    width: 30%;
+    width: 50%;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: baseline;
-    margin-bottom: 40px;
+    align-items: end;
+    margin: 0 auto;
+}
+.icon-item{
+    padding: 40px;
 }
 
+span{
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 10px;
+}
 
+/* ------------------ SECTION PAGE RESTAURANT/SPA/ ---------------------------*/
+.img-restau{
+    padding-bottom: 25px;
+}
 
+.title-carte{
+    margin: auto;
+}
+.pres-carte{
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    flex-direction: row;
+}
+.index-carte{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
 
+.resa{
+    margin-top: 45px;
+}
+.resa > a{
+    font-size: 15px;
+    color :#B18B46;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #B18B46;;
 
+}
+.resa > a:hover{
+    color: rgb(0, 0, 0);
+}
+/* ------------------ SECTION PAGE ACTUALITÉS ---------------------------*/
+.global{
+    display: flex;
+}
+.article{
+    margin: 20px;
+}
 
-
-
+/* ------------------ SECTION PAGE GALERIE PHOTO ---------------------------*/
 
 
 

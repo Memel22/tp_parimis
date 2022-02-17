@@ -6,6 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!--Google Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Raleway:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
  <!--Favicon-->
   <link rel="icon" href="./img/favicon_io/apple-touch-icon.png">
 
@@ -61,7 +66,7 @@
         <li><a href="./asset/chambre.html">Chambres & Suites</a></li>
         <li><a href="./asset/restaurant.html">Restaurant & Bar</a></li>
         <li><a href="./asset/spa.html">Spa & Bien-être</a></li>
-        <li><a href="./asset/offres.html">Offres</a></li>
+        <li><a href="./asset/actu.html">Actualités</a></li>
         <li><a href="./asset/galerie.html">Galerie</a></li>
         <li><a href="./asset/plan.html">Plan & Accès</a></li>
         <li><a href="./asset/reserver.html">Réservation</a></li>
@@ -84,7 +89,7 @@
         <a href="./asset/chambre.html" class="menu-item">Chambres & Suites</a>
         <a href="./asset/restaurant.html" class="menu-item">Restaurant & Bar</a>
         <a href="./asset/spa.html" class="menu-item">Spa & Bien-être</a>
-        <a href="./asset/offres.html" class="menu-item">Offres</a>
+        <a href="./asset/actu.html" class="menu-item">Actualités</a>
         <a href="./asset/galerie.html" class="menu-item">Galerie</a>
         <a href="./asset/reserver.html" class="menu-item menu-reserv">Réservation</a>
       </nav>
@@ -175,7 +180,7 @@
           de Sèvres, les galeries d’art et de design du Boulevard Saint-Germain forment un art de vivre dans lequel le
           Parimis Paris s’insère tout naturellement. L'art vient s’y mettre en scène avec une collection de tableaux
           contemporains uniques évoquant le Musée Rodin tout proche.</p>
-        <a target="_blank" href="hotel.html"> Voir plus...</a>
+        <a class="see-more"target="_blank" href="./asset/hotel.html"> Voir plus...</a>
       </div>
     </div>
   </section>
@@ -192,7 +197,7 @@
           paquebots d’autrefois. Du temps où voyager était un art et recevoir était une culture. Au dernier étage, les
           terrasses privées spectaculaires dialoguent avec le Dôme des Invalides ou la Tour Eiffel, si près que l’on
           croirait les toucher… 67 chambres et suites aux volumes exceptionnels.</p>
-        <a target="_blank" href="chambre.html"> Voir plus...</a>
+        <a class="see-more"target="_blank" href="./asset/chambre.html"> Voir plus...</a>
       </div>
       <div class="img-room col-lg-6 col-md-6 col-sm-12"><img src="./img/chambre2.jpg" alt="chambre" class="d-block w-100 img-thumbnail"></div>
     </div>
@@ -207,7 +212,7 @@
         <h2>Restaurant & Bar</h2>
         <p>Les Parisiens aiment à se retrouver dans l’atmosphère sereine et feutrée du restaurant, du bar ou du patio.
           Une cuisine moderne et cosmopolite s’offre aux amateurs et invite à de nouvelles experiences.</p>
-        <a target="_blank" href="restaurant.html"> Voir plus...</a>
+        <a class="see-more"target="_blank" href="./asset/restaurant.html"> Voir plus...</a>
       </div>
     </div>
   </section>
@@ -222,7 +227,7 @@
         <p>Niché autour d'une terrasse à ciel ouvert au 3ème étage, le Spa vous accueille dans un lieu protégé et hors
           du temps.
           Bain bouillonnant extérieur, cabine de massage double et tisanerie, prolongent le bien-être.</p>
-        <a target="_blank" href="spa.html">Voir plus...</a>
+        <a class="see-more"target="_blank" href="./asset/spa.html">Voir plus...</a>
       </div>
       <div class="img-spa col-lg-6 col-md-6 col-sm-12"><img src="./img/spa1.jpg" alt="spa" class="d-block w-100 img-thumbnail"></div>
     </div>
@@ -240,9 +245,9 @@
 
     <!--mise en place des blocs avec lien-->
     <div class=" row pres-offer">
-      <div class="img-offer col-lg-4 col-md-4 col-sm-12"><a href="./sejour-B"><img src="./img/spa3.jpg" alt="offre" class="d-block w-100 img-thumbnail">Séjour Bien-être</a></div>
-      <div class="img-offer col-lg-4 col-md-4 col-sm-12"><a href="./sejour-G"><img src="./img/gourmet1.jpg" alt="offre" class="d-block w-100 img-thumbnail">Séjour Gourmet</a></div>
-      <div class="img-offer col-lg-4 col-md-4 col-sm-12"><a href="./offres-H"><img src="./img/hiver.jpg" alt="offre" class="d-block w-100 img-thumbnail">Offre Hiver</a></div>
+      <div class="img-offer col-lg-4 col-md-4 col-sm-12"><a href="./asset/reserver.html"><img src="./img/spa3.jpg" alt="offre" class="d-block w-100 img-thumbnail">Séjour Bien-être</a></div>
+      <div class="img-offer col-lg-4 col-md-4 col-sm-12"><a href="./asset/reserver.html"><img src="./img/gourmet1.jpg" alt="offre" class="d-block w-100 img-thumbnail">Séjour Gourmet</a></div>
+      <div class="img-offer col-lg-4 col-md-4 col-sm-12"><a href="./asset/reserver.html"><img src="./img/hiver.jpg" alt="offre" class="d-block w-100 img-thumbnail">Offre Hiver</a></div>
     </div>
   </section>
 <hr>
@@ -251,9 +256,7 @@
   <!--bloc brève présentation actualités-->
   <section class="actu">
     <div class="title-actu">
-      <h2>Actualités</h2>
-      <br>
-      <strong>En ce moment au Parimis***** Paris</strong>
+      <h2>En ce moment au Parimis***** Paris</h2>
     </div>
     <div class="row pres-actu">
       <div class="img-actu col-lg-6 col-md-6 col-sm-12"><img src="./img/cake-g3c5d44d38_1920.jpg" alt="patisserie" class="d-block w-100 img-thumbnail" ></div>
@@ -274,7 +277,7 @@
           toute nouvelle cabine de soin qui accueillera le Spa du Cheveu ©, en collaboration avec la spécialiste
           Nathalie Tuil. 100% végétal et Made in France, et alliant base d’argiles, huiles essentielles et minéraux,
           ce soin convient à tous types de cheveux, aussi bien pour les femmes que pour les hommes.</p>
-        <a target="_blank" href="actu.html"> Voir plus...</a>
+        <p class="resa"><a href="../asset/reserver.html" target="_blank">Réserver maintenant</a></p>
       </div>
       <div class="img-actu col-lg-6 col-md-6 col-sm-12"><img src="./img/woman-g30a01e061_1920.jpg" alt="salon de coiffure" class="d-block w-100 img-thumbnail"></div>
     </div>
