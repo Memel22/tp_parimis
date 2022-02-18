@@ -37,7 +37,7 @@
 </head>
 
 <body>
-    <!-- -------------------- HEADER -------------------- -->
+    <!--  HEADER  -->
     <header>
         <div class="header-top">
             <!--logo-->
@@ -51,12 +51,6 @@
                     <button class="btn-search" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </div>
             </form>
-            <!-- Langues -->
-            <div class="langues">
-                <a href="./index.html" class="fr" title="Français"><img src="../img/francais.png" alt="site en FR">
-                </a>
-                <a href="./index.html" class="en" title="Anglais"><img src="../img/anglais.png" alt="site en EN"></a>
-            </div>
         </div>
 
         <!-- Menu Burger -->
@@ -82,23 +76,8 @@
             </span>
         </a>
         <hr>
-
-        <!-- NavBar -->
-        <div class="header-bottom">
-            <nav id="menu">
-                <a href="./hotel.html" class="menu-item">L'hôtel</a>
-                <a href="./chambre.html" class="menu-item">Chambres & Suites</a>
-                <a href="./restaurant.html" class="menu-item">Restaurant</a>
-                <a href="./spa.html" class="menu-item">Spa & Bien-être</a>
-                <a href="./actu.html" class="menu-item">Actualités</a>
-                <a href="./galerie.html" class="menu-item">Galerie</a>
-                <a href="./reserver.html" class="menu-item menu-reserv">Réservation</a>
-            </nav>
-        </div>
-        <hr>
     </header>
-
-    <!-- ------------------ FICHE CONTACT -------------------- -->
+    <!--  FICHE CONTACT  -->
     <div class="container">
         <section>
             <div class="intro">
@@ -109,18 +88,15 @@
           <div class="intro">
               <p>Si vous souhaitez obtenir de l'aide dans votre réservation ou que vous souhaitez postuler, n'hésitez pas à nous contacter par téléphone, par mail ou en nous envoyant un message à l'aide du formulaire de contact ci-dessous :</p>
           </div>
+
           <!-- FORMULAIRE -->
           <div class="form-contact">
               <form action="#" method="post">
-                <div>
-                    <input type="radio" name="genre" value="Madame">
-                    <label for="madame">Madame</label>
-                    <input type="radio" name="genre" value="Monsieur">
-                    <label for="monsieur">Monsieur</label>
-                </div>
-                <div>
-                    <label for="objet_concerne">Votre message concerne :</label>
-                    <select name="objet" id="objet" required="">
+                    <label class="label" for="email"><span>Email</span> <span><i class="far fa-envelope"></i></span></label>
+                    <input class="input" type="email" name="email" id="email" required>
+    
+                    <label class="label" for="raison"><span>Raison</span> <span><i class="fas fa-list-ul"></i></span></label>
+                    <select class="input" name="raison" id="raison" required="">
                         <option value="hotel">L'hôtel</option>
                         <option value="reservation">Les réservations</option>
                         <option value="chambres">Les chambres/suites</option>
@@ -131,46 +107,36 @@
                         <option value="free_message">Une demande de devis</option>
                         <option value="free_message">Votre candidature</option>
                         <option value="free_message">Message libre</option>
-                      </select>
-                </div>
-                <div>
-                    <label for="name">Prénom</label>
-                    <input type="text" id="surname" name="user_surname">
-                    <label for="name">Nom</label>
-                    <input type="text" id="name" name="user_name">
-                    <label for="mail">E-mail</label>
-                    <input type="email" id="mail" name="user_email">
-                </div>
-                <div>
-                    <label for="msg">Votre message:</label>
-                    <br>
-                    <textarea id="msg" name="user_message"></textarea>
-                </div>
-                <div>
-                    <input type="checkbox" id="choix_news" name="choix_news">
-                    <label id="choix" for="choix">S'inscrire à la newsletter de l'Hôtel Parimis Paris</label>
-                </div>
-                <div>
-                    <button type="submit">Envoyer</button>
-                </div>
-              </form>
-          </div>
-
-
-
-
-
-
-
-
-            
-                            
-                            
-                            
-
+                    </select>
+    
+                    <label class="label" for="sujet"><span>Sujet</span> <span><i class="fas fa-pencil-alt"></i></span></label>
+                    <input class="input" type="text" name="sujet" id="sujet" required>
+    
+                    <label class="label" for="message"><span>Message</span> <span><i class="far fa-comment-alt"></i></span></label>
+                    <textarea class="input" name="message" id="message" required rows="7"></textarea>
+    
+                    <hr>
+    
+                    <button class="input btn-send" type="submit"></i> Envoyer <i class="fas fa-paper-plane"></i></button>
+                </form>
         </section>
+        <div class="intro">
+            <h3>Coordonnées de l'hôtel</h3>
+                <p>HÔTEL PARIMIS***** PARIS<br>
+                    1 avenue Montaigne <br>
+                    75008 Paris - France <br>
+                    Tél. : 01.66.32.45.52 <br>
+                    Email : contact@parimis.com
+                </p>
+        </div>
+        <div class="iframe">
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20997.199182181797!2d2.2842744264858488!3d48.86488612442522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fdd0b743c25%3A0xf7293b466460cc38!2s1.+Avenue+Montaigne%2C+75008+Paris%2C+France!5e0!3m2!1sfr!2sch!4v1530814902133"></iframe>
+        </div>
+        <br>
+        <br>
+        <br>
     </div>
-    <!-- ----------- FOOTER ------------- -->
+    <!-- FOOTER  -->
     <footer>
 
         <div id="footer">
@@ -211,17 +177,21 @@
 
             </div>
 
-            <!--Bloc Footer liens-->
-            <div class="footer-bottom">
-
-                <a href="mention.html">Mentions Légales</a> -
-                <a href="cgv.html">Conditions Générales de Vente</a> -
-                <a href="plan.html">Plan du site </a> -
-                <a href="contact.html">Contact </a> -
-                <a href="avis.html">Avis </a> -
-                <a href="presse.html">Presse</a>
-
-            </div>
+      <!--Bloc Footer-->
+      <div class="footer-bottom">
+        <div>
+          <a href="mention.html">Mentions Légales</a> -
+          <a href="cgv.html">Conditions Générales de Vente</a> -
+          <a href="plan.html">Plan du site </a> -
+          <a href="contact.html">Contact </a> -
+          <a href="avis.html">Avis </a> -
+          <a href="presse.html">Presse</a>
+        </div>
+          <!-- Langues -->
+          <div class="langues">
+            <a href="./index.html" class="fr" title="Français"><img src="../img/francais.png" alt="site en FR"> </a>
+            <a href="./index.html" class="en" title="Anglais"><img src="../img/anglais.png" alt="site en EN"></a>
+          </div>
 
             <!--Bloc Footer copyright-->
             <div class="copyright">
@@ -229,9 +199,7 @@
                     cie</p>
             </div>
         </div>
-
     </footer>
-
     <script src="../app.js"></script>
 </body>
 

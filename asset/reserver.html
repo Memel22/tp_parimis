@@ -32,30 +32,17 @@
     <!--Mon CSS-->
     <link rel="stylesheet" href="../style.css">
 
-    <title>Chambres & Suites Parimis Paris</title>
+    <title>Réservation</title>
 
 </head>
 
 <body>
-    <!-- -------------------- HEADER -------------------- -->
+    <!-- HEADER -->
     <header>
         <div class="header-top">
             <!--logo-->
             <div class="logo1">
                 <a href="../index.html"><img src="../img/parimis_logo.png" alt="logo parimis"></a>
-            </div>
-            <!-- Barre de recherche -->
-            <form class="search">
-                <input class="search1" type="search" placeholder="Rechercher..." name="search">
-                <div class="search2">
-                    <button class="btn-search" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                </div>
-            </form>
-            <!-- Langues -->
-            <div class="langues">
-                <a href="./index.html" class="fr" title="Français"><img src="../img/francais.png" alt="site en FR">
-                </a>
-                <a href="./index.html" class="en" title="Anglais"><img src="../img/anglais.png" alt="site en EN"></a>
             </div>
         </div>
 
@@ -82,45 +69,32 @@
             </span>
         </a>
         <hr>
-
-        <!-- NavBar -->
-        <div class="header-bottom">
-            <nav id="menu">
-                <a href="./hotel.html" class="menu-item">L'hôtel</a>
-                <a href="./chambre.html" class="menu-item">Chambres & Suites</a>
-                <a href="./restaurant.html" class="menu-item">Restaurant</a>
-                <a href="./spa.html" class="menu-item">Spa & Bien-être</a>
-                <a href="./actu.html" class="menu-item">Actualités</a>
-                <a href="./galerie.html" class="menu-item">Galerie</a>
-                <a href="./reserver.html" class="menu-item menu-reserv">Réservation</a>
-            </nav>
-        </div>
-        <hr>
     </header>
 
-    <!-- ------------------ FICHE RESERVATION -------------------- -->
+
+    <!--  FICHE RESERVATION -->
     <div class="container">
         <section>
             <div class="intro">
                 <h1>Réservation</h1>
                 <h3>Profitez pleinement de tous nos services en formule ou à la carte</h3>
             </div>
-            <!-- ----------- Formulaire ------------- -->
+            <!-- Formulaire  -->
             <!-- Réservation DATES -->
             <form class="form-dispo" method="post">
                 <h4>Vos disponibilités</h4>
                 <div class="bandeau-resa">
                     <div class="bandeau-resa-item">
                         <label for="to">Arrivée</label>
-                        <input type="date" name="to" class="date-sejour">
+                        <input type="date" name="to" class="date-sejour" id="to">
                     </div>
                     <div class="bandeau-resa-item">
                         <label for="from">Départ</label>
-                        <input type="date" name="from" class="date-sejour">
+                        <input type="date" name="from" class="date-sejour" id="from">
                     </div>
                     <div class="bandeau-resa-item">
                         <label for="case">Dates flexibles</label>
-                        <input type="checkbox" name="case" class="date-sejour">
+                        <input type="checkbox" name="case" class="date-sejour" id="case">
                     </div>
                 </div>
                 <!-- fenêtre form -->
@@ -183,13 +157,14 @@
                         </div>
                         <div>
                             <br>
-                            <label for="">Animal de compagnie :</label>
-                            <input type="radio" name="pet" value="oui">
+                            <label for="animal">Animal de compagnie :</label>
+                            <input type="radio" name="pet" value="oui" id="oui">
                             <label for="oui">Oui</label>
-                            <input type="radio" name="pet" value="non" checked="checked">
+                            <input type="radio" name="pet" value="non" checked="checked" id="non">
                             <label for="non">Non</label>
                         </div>
                     </fieldset>
+
                     <!-- Réservation RESTAURANT -->
                     <fieldset>
                         <h3>Réservation Restaurant</h3>
@@ -238,7 +213,7 @@
                                 <option value="9">9</option>
                                 <option value="10">10</option>
                             </select>
-                            <label for="">soin(s)</label>
+                            <label for="soins">soin(s)</label>
                         </div>
                         <div>
                             <br>
@@ -255,8 +230,9 @@
                 </div>
                 <!-- FIN Réservation SPA -->
                 <!-- BOUTON de réservation -->
-                <div id="btn-dispo">
-                    <button type="button"><a href="reserver.html">Voir les disponibilités</a></button>
+                <div class="bandeau-reserv-item">
+                    <input type="button" name="reservation" class="button" value="Voir les disponibilités"
+                        onclick="alert('Aucune disponibilité à ces dates, veuillez modifier vos dates')">
                 </div>
             </form>
             <!-- FIN formulaire -->
@@ -273,9 +249,9 @@
             </div>
         </section>
     </div>
-    <!-- ----------- FOOTER ------------- -->
-    <footer>
 
+    <!-- FOOTER  -->
+    <footer>
         <div id="footer">
             <!--bloc footer logo & coordonnées-->
             <div class="logo">
@@ -314,25 +290,32 @@
 
             </div>
 
-            <!--Bloc Footer liens-->
+            <!--Bloc Footer-->
             <div class="footer-bottom">
+                <div>
+                    <a href="mention.html">Mentions Légales</a> -
+                    <a href="cgv.html">Conditions Générales de Vente</a> -
+                    <a href="plan.html">Plan du site </a> -
+                    <a href="contact.html">Contact </a> -
+                    <a href="avis.html">Avis </a> -
+                    <a href="presse.html">Presse</a>
+                </div>
+                <!-- Langues -->
+                <div class="langues">
+                    <a href="./index.html" class="fr" title="Français"><img src="../img/francais.png" alt="site en FR">
+                    </a>
+                    <a href="./index.html" class="en" title="Anglais"><img src="../img/anglais.png"
+                            alt="site en EN"></a>
+                </div>
 
-                <a href="mention.html">Mentions Légales</a> -
-                <a href="cgv.html">Conditions Générales de Vente</a> -
-                <a href="plan.html">Plan du site </a> -
-                <a href="contact.html">Contact </a> -
-                <a href="avis.html">Avis </a> -
-                <a href="presse.html">Presse</a>
-
-            </div>
-
-            <!--Bloc Footer copyright-->
-            <div class="copyright">
-                <p>Officiel - Tous droits réservés - Hôtel Parimis Paris - © 2022 Conception & Réalisation : Amélie &
-                    cie</p>
+                <!--Bloc Footer copyright-->
+                <div class="copyright">
+                    <p>Officiel - Tous droits réservés - Hôtel Parimis Paris - © 2022 Conception & Réalisation : Amélie
+                        &
+                        cie</p>
+                </div>
             </div>
         </div>
-
     </footer>
 
     <script src="../app.js"></script>
