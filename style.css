@@ -46,7 +46,7 @@ h1{
     font-family: 'Raleway', sans-serif;
     color:#B18B46; 
     padding-bottom: 30px;
-    border-bottom: 1px solid #B18B46;;
+    border-bottom: 1px solid #B18B46;
 }
 h2{
     color: #AC8866;
@@ -66,6 +66,7 @@ h4{
 h5{
     font-weight: bold;
     font-family: 'Open Sans', sans-serif;
+    margin-top: 15px;
 }
 h6{
     margin-bottom: 15px;
@@ -465,12 +466,36 @@ fieldset{
 
 iframe {
     width: 50%;
-    height:  500px;
+    height: 315px;
     margin: 0 auto;
     padding-top: 40px;
 }
 .iframe{
     text-align: center;
+    
+   
+}
+/* ------------------ SECTION PRESSE ---------------------------*/
+.text-presse{
+    text-align: center;
+    padding: 20px;
+}
+
+.presse{
+    padding: 0 20px 20px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+}
+
+.img-people{
+    padding-bottom: 15px;
+}
+
+.h2{
+    text-align: center;
+    border-bottom: 1px solid #B18B46;
+    margin: 30px;
 }
 
 
